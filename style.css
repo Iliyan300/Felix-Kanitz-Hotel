@@ -4,6 +4,7 @@
             --gold: #bf8e5a;
             --off-white: #fffbfa;
             --transition: all 0.3s ease;
+            scroll-behavior: smooth;
         }
         
         * {
@@ -315,6 +316,32 @@
             transform: translateY(-2px);
         }
         
+
+        /* Golf Bar Section */
+
+        .golf-bar-header  {
+
+            margin-bottom: 20px;
+            padding: 1rem;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .golf-bar-header img {
+
+            width: 50%;
+        }
+       
+        .golf-bar-info p {
+
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #333;
+            
+        }
+
+
         /* Location Section */
         .location {
             padding: 100px 0;
@@ -607,13 +634,21 @@
                 
             }
 
+            .golf-bar-header .section-title {
+
+                left: 20%;
+            }
+            
+
             .golf-bar-header .golf-bar-img {
                 
-                width: 500px;
+                width: 100%;
                 border-radius: 20px;
                 margin-left: auto;
                 margin-right: auto;
             }
+
+
 
         }
     
