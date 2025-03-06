@@ -1,5 +1,16 @@
 
 const menuIcon = document.getElementById("menu-icon");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+const carousel = document.getElementById("carousel-container");
+const golfImages = document.querySelectorAll(".golf-bar-img");
+const imagesWidth = golfImages[0].clientWidth;
+const imageGapLeft = parseInt(window.getComputedStyle(golfImages[0]).marginLeft)
+const imageGapRight = parseInt(window.getComputedStyle(golfImages[0]).marginRight)
+
+
+
+
 
 menuIcon.addEventListener("click", function() {
     
@@ -8,28 +19,24 @@ menuIcon.addEventListener("click", function() {
     menuAnimate.classList.toggle("rotate-menu")
     navbar.classList.toggle("show-menu");
 
+});
+
+
+nextBtn.addEventListener("click", function() {
+    const scrollAmount =  imagesWidth + imageGapLeft + imageGapRight;
+    carousel.scrollLeft += scrollAmount;
     
-});
+
+})
+
+prevBtn.addEventListener("click", function() {
+    const scrollAmount = imagesWidth + imageGapLeft + imageGapRight;
+    carousel.scrollLeft -= scrollAmount;
+   
+
+})
 
 
-const images = document.querySelector('.carousel-images');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
 
-let index = 0;
-const totalImages = document.querySelectorAll('.carousel-images img').length;
 
-nextBtn.addEventListener('click', () => {
-  index = (index + 1) % totalImages;
-  updateCarousel();
-});
 
-prevBtn.addEventListener('click', () => {
-  index = (index - 1 + totalImages) % totalImages;
-  updateCarousel();
-});
-
-function updateCarousel() {
-  const offset = -index * 400; // 400px е ширината на снимката
-  images.style.transform = `translateX(${offset}px)`;
-}

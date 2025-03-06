@@ -155,13 +155,18 @@
         }
         
         .about-content {
-            display: flex;
+            
             gap: 50px;
+            display: flex;
+            justify-content: center;
             align-items: center;
         }
+
+        
         
         .about-text {
             flex: 1;
+           
         }
         
         .about-text h2 {
@@ -169,6 +174,7 @@
             margin-bottom: 25px;
             color: var(--gold);
             position: relative;
+           
         }
         
         .about-text h2::after {
@@ -319,6 +325,8 @@
 
         /* Golf Bar Section */
 
+       
+
         .golf-bar-header  {
 
             margin-bottom: 20px;
@@ -327,19 +335,47 @@
             margin-right: 10px;
         }
 
-        .golf-bar-header img {
+        .golf-bar-images img {
 
-            width: 50%;
+            width: 280px;
+            border-radius: 20px;
+            margin:0 10px;
+           
         }
        
         .golf-bar-info p {
 
             font-size: 18px;
-            margin-bottom: 20px;
             line-height: 1.8;
             color: #333;
             
         }
+
+        
+        .carousel button {
+            display: none;
+        }
+
+        .golf-bar .details {
+
+            margin-top: 1.5rem;
+        }
+
+        .golf-bar-images {
+
+            display: flex;
+            overflow: hidden;
+           
+        }
+
+        .golf-bar-images img:nth-child(n+4) {
+
+            display: none;
+
+        }
+
+       
+        
 
 
         /* Location Section */
@@ -528,6 +564,7 @@
            .container {
 
                 margin-top: 1.5rem;
+            
            }
 
             .navbar {
@@ -634,21 +671,115 @@
                 
             }
 
+            .golf-bar .container .view-details {
+
+                margin-top: 1.5rem;
+            }
+
             .golf-bar-header .section-title {
 
-                left: 20%;
+                left: 15%;
+            }
+
+
+            .golf-bar {
+            position: relative;
+           
+            }
+
+            .carousel {
+                scrollbar-width: none;
+                overflow: auto;
+                scroll-behavior: smooth;
+                width: 340px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 20px;
+            }
+
+            .carousel button {
+
+                position: absolute;
+                z-index: 3;
+                font-size: 2.8rem;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                color: rgb(105, 105, 105);
+                display: inline-block;
+                
+            }
+
+            .carousel #nextBtn {
+
+                top: 65%;
+                left: 90%;
+                
+            }
+
+
+            .carousel #prevBtn {
+
+                top: 65%;
+                right: 90%;
+            }
+
+            .golf-bar-images {
+                display: flex;
+                overflow: visible;
             }
             
 
-            .golf-bar-header .golf-bar-img {
+            .golf-bar-images .golf-bar-img {
+                width: 320px;
+                height: 370px;
+                border-radius: 50px;
+                object-fit: cover;
+                flex-shrink: 0;
+                margin:0 10px;
                 
-                width: 100%;
-                border-radius: 20px;
-                margin-left: auto;
-                margin-right: auto;
             }
 
 
+            .golf-bar-images img:nth-child(n+4) {
 
+                display: flex;
+    
+            }
+           
+
+        
+            .about .container {
+                padding: 0;
+            }
+
+            .about .about-content {
+
+                padding: 0 20px;
+            }
+          
+
+            video {
+
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                
+            }
+
+
+           .golf-bar .container .details {  
+            display: flex;
+            margin-top: 1rem;
+            width: 100%;
+           }
+
+           .details .view-details {
+            
+            margin-left: auto;
+            margin-right: auto;
+        
+            
+           }
         }
     
