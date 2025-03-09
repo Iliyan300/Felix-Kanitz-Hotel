@@ -325,58 +325,80 @@
 
         /* Golf Bar Section */
 
+        
        
+        .golf-bar {
+            
+            background-position: center;
+            background-size:cover;
+            min-height: 80vh;
+            background-blend-mode: multiply;
+            background-color: #464646;
+        }
 
+        
+
+        .golf-bar .container {
+            
+            margin-top: 0;
+        }
+       
         .golf-bar-header  {
-
             margin-bottom: 20px;
             padding: 1rem;
             margin-left: 10px;
             margin-right: 10px;
+            border-radius: 10px;
+            
         }
 
-        .golf-bar-images img {
+        .golf-bar-info {
 
-            width: 280px;
-            border-radius: 20px;
-            margin:0 10px;
-           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         
         }
-       
+    
+     
         .golf-bar-info p {
 
             font-size: 18px;
             line-height: 1.8;
-            color: #333;
+            color: #fff;
+           text-align: start;
+        }
+
+        .golf-bar-services {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            
+
+        }
+
+        .golf-bar-services li {
+
+            margin: 10px;
             
         }
-
         
-        .carousel button {
-            display: none;
-        }
+        .golf-bar-services li .fa-check {
 
+            color: limegreen;
+        }
+     
         .golf-bar .details {
 
             margin-top: 1.5rem;
+            margin-left: 1.5rem;
         }
 
-        .golf-bar-images {
-
-            display: flex;
-            overflow: hidden;
-           
-        }
-
-        .golf-bar-images img:nth-child(n+4) {
-
-            display: none;
-
-        }
-
-       
-        
-
+      
+    
 
         /* Location Section */
         .location {
@@ -671,82 +693,34 @@
                 
             }
 
-            .golf-bar .container .view-details {
+            .golf-bar .details {
+                display: flex;
+                padding: 1rem;
+                
+            }
 
-                margin-top: 1.5rem;
+            .details .view-details {
+
+                margin: 1.5rem 1.5rem;
+                
             }
 
             .golf-bar-header .section-title {
 
-                left: 15%;
+                left: 50%;
+            }
+
+            .golf-bar-info p {
+
+                text-align: center;
             }
 
 
             .golf-bar {
             position: relative;
+            min-height: auto;
            
             }
-
-            .carousel {
-                scrollbar-width: none;
-                overflow: auto;
-                scroll-behavior: smooth;
-                width: 340px;
-                margin-left: auto;
-                margin-right: auto;
-                border-radius: 20px;
-            }
-
-            .carousel button {
-
-                position: absolute;
-                z-index: 3;
-                font-size: 2.8rem;
-                border: none;
-                background-color: transparent;
-                cursor: pointer;
-                color: rgb(105, 105, 105);
-                display: inline-block;
-                
-            }
-
-            .carousel #nextBtn {
-
-                top: 65%;
-                left: 90%;
-                
-            }
-
-
-            .carousel #prevBtn {
-
-                top: 65%;
-                right: 90%;
-            }
-
-            .golf-bar-images {
-                display: flex;
-                overflow: visible;
-            }
-            
-
-            .golf-bar-images .golf-bar-img {
-                width: 320px;
-                height: 370px;
-                border-radius: 50px;
-                object-fit: cover;
-                flex-shrink: 0;
-                margin:0 10px;
-                
-            }
-
-
-            .golf-bar-images img:nth-child(n+4) {
-
-                display: flex;
-    
-            }
-           
 
         
             .about .container {
@@ -768,18 +742,6 @@
             }
 
 
-           .golf-bar .container .details {  
-            display: flex;
-            margin-top: 1rem;
-            width: 100%;
-           }
-
-           .details .view-details {
-            
-            margin-left: auto;
-            margin-right: auto;
-        
-            
-           }
+           
         }
     
