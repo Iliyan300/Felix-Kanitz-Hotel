@@ -745,3 +745,31 @@
            
         }
     
+
+        /*  MODAL  */
+
+
+        .details-modal {
+
+            position: fixed;
+            background-color: brown;
+            border-radius: 16px;
+            top: 30%;
+            left: 5%;
+            width: 90%;
+            height: 60vh;
+            overflow: hidden;
+            padding: 1rem;
+            z-index: 1;
+            
+        }
+
+        .modal-room-info {
+            
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
