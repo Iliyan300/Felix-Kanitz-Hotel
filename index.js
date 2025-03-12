@@ -38,26 +38,4 @@ setInterval(changeBg, 5000);
 
 
 
-document.getElementById("open-studio").addEventListener("click", function(event) {
-
-
-
-let container = event.target.parentElement;
-
-let modal = document.createElement("div");
-let roomTitle = document.createElement("h2");
-let roomInfo = document.createElement("p");
-let roomSize = document.createElement("h3");
-let facilities = document.createElement("h3");
-
-
-
-modal.appendChild(roomTitle)
-modal.appendChild(roomInfo)
-modal.appendChild(roomSize)
-modal.appendChild(facilities)
-container.appendChild(modal)
-modal.classList.add("modal-active");
-
-})
 

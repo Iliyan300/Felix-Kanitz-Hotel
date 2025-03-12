@@ -750,26 +750,157 @@
 
 
         .details-modal {
-
             position: fixed;
-            background-color: brown;
+            background-color: white;
             border-radius: 16px;
-            top: 30%;
-            left: 5%;
-            width: 90%;
-            height: 60vh;
-            overflow: hidden;
-            padding: 1rem;
+            top: 15%;
+            max-width: 90vw;
+            max-height: 80vh;
             z-index: 1;
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: 600;
+            box-shadow: 0 0 2rem rgba(0, 0, 0, 0.349);
+            padding: 1rem 1rem;
+            overflow-y: scroll;
+            overflow-x: hidden;
+          
         }
+
+        .details-modal p {
+            font-size: 1rem;
+        }
+
+        .modal-carousel h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            align-self: center;
+        }
+
+        .details-modal ul {
+            list-style: none;
+            font-size: 1rem;
+        }
+        
 
         .modal-room-info {
-            
+            width: 100%;
+            margin-left: 1rem;
+            margin-bottom: auto;
+            margin-top: auto;
+        }
+
+        .modal-room-amenities {
+            text-align: left;
             display: flex;
-            list-style: none;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-           
+            margin-left: 1rem;
+            
         }
+
+        .modal-room-amenities li {
+
+            margin: 10px 0;
+        }
+
+        .modal-room-amenities li i {
+
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+
+        
+        .modal-carousel {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .modal-image {
+            border-radius: 20px;
+            max-width: 50vw;
+            margin-top:1.5rem;
+        }
+
+        .details-modal .X {
+         
+            width: 100%;
+            display: flex;
+        }
+
+
+        .details-modal .X .fa-xmark {
+            
+            margin-left: auto;
+            font-size: 1.8rem;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            
+        }
+
+        .modal-content-wrapper {
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        
+        .modal-room-other {
+
+            width: 100%;
+            margin: 1rem 1rem;
+        }
+
+
+        .modal-room-other ul {
+
+            display: flex;
+            justify-content: center;
+            
+            gap: 1rem;
+            
+        }
+
+
+        .modal-room-type .room-description {
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          text-align: flex-start;
+        }
+
+
+        .details-modal .smoking {
+
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .details-modal .smoking span {
+
+            font-weight: 800;
+            font-size: 1.2rem;
+            
+        }
+
+        .details-modal .reserve  {
+
+           margin: 1rem auto;
+           width: 100%;
+        }
+
+        .details-modal button {
+
+            font-size: 1.1rem;
+            width: 100%;
+            border: none;
+        }
+
+        
