@@ -59,7 +59,7 @@
     </section>
     
     <!-- Apartments Section -->
-    <section class="apartments" id="apartments">
+    <section class="apartments" id="apartments-modal">
         <div class="container">
             <h2 class="section-title">Our Apartments</h2>
             <div class="apartment-grid">
@@ -71,23 +71,26 @@
                     <div class="apartment-info">
                         <h3>Studio</h3>
                         <p>A compact yet stylish space perfect for solo travelers or couples seeking comfort in the heart of Plovdiv.</p>
-                        <a class="view-details" id="open-studio">View Details</a>
+                        <a class="view-details" id="details-view">View Details</a>
                     </div>
                 </div>
-                    <div class="details-modal">
+                    <!-- MODAL (HIDDEN) -->
+                <div class="details-modal" id="apartment-modal">
                     <div class="X">
                     <i class="fa-solid fa-xmark"></i>
                     </div>
                     <h3>The Studio</h3>
                     <div class="modal-content-wrapper">
-                        
-                    <div class="modal-carousel">
-                        <button id="prev-btn"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                    <div class="modal-carousel" id="img-carousel">
+                        <button id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
                         <img class="modal-image" src="/images/the studio/studio-1.jpg" alt="Apartment images">
                         <img class="modal-image" src="/images/the studio/studio-2.jpg" alt="Apartment images">
                         <img class="modal-image" src="/images/the studio/studio-3.jpg" alt="Apartment images">
-
-                        <button id="next-btn"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                        <img class="modal-image" src="/images/the studio/studio-4.jpg" alt="Apartment images">
+                        <img class="modal-image" src="/images/the studio/studio-5.jpg" alt="Apartment images">
+                        <img class="modal-image" src="/images/the studio/studio-6.jpg" alt="Apartment images">
+                        <img class="modal-image" src="/images/the studio/studio-7.jpg" alt="Apartment images">
+                        <button id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                     <div class="modal-room-info">
                     <ul class="modal-room-amenities">
@@ -118,7 +121,7 @@
                     <p><span>Smoking:</span> No Smoking</p>
                 </div>
                 <div class="reserve">
-                    <button href="" class="view-details">Reserve</button>
+                    <button href="" class="reserve-btn">Reserve</button>
                 </div>
               
                 </div>

@@ -305,7 +305,7 @@
             line-height: 1.6;
         }
         
-        .view-details {
+        .view-details, .reserve-btn {
             display: inline-block;
             background-color: var(--gold);
             color: var(--off-white);
@@ -316,7 +316,7 @@
             border-radius: 5px;
         }
         
-        .view-details:hover {
+        .view-details:hover, .reserve-btn:hover {
             background-color: var(--cream);
             color: var(--gold);
             transform: translateY(-2px);
@@ -748,7 +748,7 @@
 
         /*  MODAL  */
 
-
+       
         .details-modal {
             position: fixed;
             background-color: white;
@@ -765,14 +765,15 @@
             box-shadow: 0 0 2rem rgba(0, 0, 0, 0.349);     
             overflow-y: scroll;
             overflow-x: hidden;
-          
+            display: none;
+        
         }
 
         .details-modal p {
             font-size: 1rem;
         }
 
-        .modal-carousel h3 {
+        .details-modal h3 {
             font-size: 2.5rem;
             font-weight: 800;
             align-self: center;
@@ -787,10 +788,10 @@
         
 
         .modal-room-info {
-            width: 100%;
             padding: 1rem;
             margin-top: auto;
             margin-bottom: auto;
+            max-width: 40vw;
         }
 
         .modal-room-amenities {
@@ -799,7 +800,6 @@
             flex-direction: column;
             justify-content: center;
             margin-left: 10px;
-            margin-right: 10px;
         }
 
         .modal-room-amenities li {
@@ -822,12 +822,15 @@
         /* MODAL CAROUSEL */
 
         .modal-carousel {
-            max-width: 50vw;
+            width: 100%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
-            overflow: scroll;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            border-radius: 10px;
+          padding: 1rem;
             
         }
 
@@ -837,6 +840,7 @@
             height: 300px;
             margin-top:1.5rem;
             margin-left: 1rem;
+            
         }
 
 
@@ -859,14 +863,14 @@
 
         .modal-carousel #prev-btn {
             top: 50%;
-            right: 90%;
+            right: 95%;
             transform: translate(50%, 50%);
            width: 50px;
         }
 
         .modal-carousel #next-btn {
             top: 50%;
-            right: 5%;
+            right: 40%;
             transform: translate(50%, 50%);
             width: 50px;
            
@@ -926,7 +930,6 @@
 
             display: flex;
             justify-content: center;
-            
             gap: 1rem;
             
         }
