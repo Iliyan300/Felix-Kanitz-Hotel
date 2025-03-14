@@ -64,32 +64,31 @@
             <h2 class="section-title">Our Apartments</h2>
             <div class="apartment-grid">
                 <!-- Apartment 1 -->
-                <div class="apartment-card">
+                <div class="apartment-card" id="studio">
                     <div class="apartment-img">
                         <img src="images/the studio/studio-6.jpg" loading="lazy" alt="Studio Apartment">
                     </div>
                     <div class="apartment-info">
                         <h3>Studio</h3>
                         <p>A compact yet stylish space perfect for solo travelers or couples seeking comfort in the heart of Plovdiv.</p>
-                        <a class="view-details" id="details-view">View Details</a>
+                        <button class="view-details" data-apartment="studio">View Details</button>
                     </div>
                 </div>
-                    <!-- MODAL (HIDDEN) -->
-                <div class="details-modal" id="apartment-modal">
+
+                <!--- MODAL (HIDDEN) --->
+                    <div class="details-modal modal-hidden" id="apartment-modal">
                     <div class="X">
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark" id="close-btn"></i>
                     </div>
                     <h3>The Studio</h3>
                     <div class="modal-content-wrapper">
                     <div class="modal-carousel" id="img-carousel">
                         <button id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                        <img class="modal-image" src="/images/the studio/studio-1.jpg" alt="Apartment images">
-                        <img class="modal-image" src="/images/the studio/studio-2.jpg" alt="Apartment images">
-                        <img class="modal-image" src="/images/the studio/studio-3.jpg" alt="Apartment images">
-                        <img class="modal-image" src="/images/the studio/studio-4.jpg" alt="Apartment images">
-                        <img class="modal-image" src="/images/the studio/studio-5.jpg" alt="Apartment images">
-                        <img class="modal-image" src="/images/the studio/studio-6.jpg" alt="Apartment images">
-                        <img class="modal-image" src="/images/the studio/studio-7.jpg" alt="Apartment images">
+                        <div class="img-wrapper">
+                        <img class="modal-image" src="/images/the studio/studio-1.jpg" alt="Apartment images"> 
+                        <img class="modal-image" src="/images/the studio/studio-2.jpg" alt="Apartment images"> 
+                        <img class="modal-image" src="/images/the studio/studio-3.jpg" alt="Apartment images"> 
+                        </div>                      
                         <button id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                     <div class="modal-room-info">
@@ -121,68 +120,68 @@
                     <p><span>Smoking:</span> No Smoking</p>
                 </div>
                 <div class="reserve">
-                    <button href="" class="reserve-btn">Reserve</button>
+                    <button href="" class="view-details">Reserve</button>
                 </div>
               
                 </div>
                 
                 <!-- Apartment 2 -->
-                <div class="apartment-card">
+                <div class="apartment-card" id="kapana">
                     <div class="apartment-img">
                         <img src="images/kapana/kapana-1.jpg" loading="lazy" alt="Kapana Apartment">
                     </div>
                     <div class="apartment-info">
                         <h3>Kapana</h3>
                         <p>Named after the artistic district nearby, this bohemian-inspired apartment captures the creative spirit of Plovdiv.</p>
-                        <a href="#" class="view-details">View Details</a>
+                        <button class="view-details" data-apartment="kapana">View Details</button>
                     </div>
                 </div>
                 
                 <!-- Apartment 3 -->
-                <div class="apartment-card">
+                <div class="apartment-card" id="theview">
                     <div class="apartment-img">
-                        <img src="images/the view/the-view-5.jpg" loading="lazy" alt="The View Apartment">
+                        <img src="images/the view/theview-2.jpg" loading="lazy" alt="The View Apartment">
                     </div>
                     <div class="apartment-info">
                         <h3>The View</h3>
                         <p>Featuring expansive windows that frame Plovdiv's stunning cityscape, offering breathtaking panoramas at every turn.</p>
-                        <a href="#" class="view-details">View Details</a>
+                        <button class="view-details" data-apartment="theview">View Details</button>
                     </div>
                 </div>
                 
                 <!-- Apartment 4 -->
-                <div class="apartment-card">
+                <div class="apartment-card" id="thefamily">
                     <div class="apartment-img">
-                        <img src="images/family/the family.jpg" loading="lazy" alt="Family Apartment">
+                        <img src="images/family/family-1.jpg" loading="lazy" alt="Family Apartment">
                     </div>
                     <div class="apartment-info">
                         <h3>Family</h3>
                         <p>Spacious accommodations designed with families in mind, offering ample room and thoughtful amenities for all ages.</p>
-                        <a href="#" class="view-details">View Details</a>
+                        <button class="view-details" data-apartment="thefamily">View Details</button>
                     </div>
                 </div>
                 
                 <!-- Apartment 5 -->
-                <div class="apartment-card">
+                <div class="apartment-card" id="onthetop">
                     <div class="apartment-img">
                         <img src="images/on the top/onthetop-4.jpg" loading="lazy" alt="On The Top Apartment">
                     </div>
                     <div class="apartment-info">
                         <h3>On The Top</h3>
                         <p>Our premium penthouse apartment offering unparalleled luxury and commanding views from the building's summit.</p>
-                        <a href="#" class="view-details">View Details</a>
+                        <button class="view-details" data-apartment="onthetop">View Details</button>
                     </div>
                 </div>
                 
                 <!-- Apartment 6 -->
-                <div class="apartment-card">
+                <div class="apartment-card" id="panorama">
                     <div class="apartment-img">
                         <img src="/images/panorama/panorama-4.jpg" loading="lazy" alt="Panorama Apartment">
                     </div>
                     <div class="apartment-info">
                         <h3>Panorama</h3>
                         <p>A corner apartment with windows on multiple sides, providing a 180-degree view of Plovdiv's historic landscape.</p>
-                        <a href="#" class="view-details">View Details</a>
+                        <button class="view-details" data-apartment="panorama">View Details</button>
                     </div>
                 </div>
             </div>
@@ -206,8 +205,8 @@
                         <li><i class="fa-solid fa-check"></i> Golf ball ProV1 (opportunity to play with Callaway - balls from highest quality)</li>
                     </ul>
                     <div class="details">
-                        <a href="#" class="view-details">View Details</a>
-                            </div>
+                        <button class="view-details" data-apartment="golfbar">View Details</button>
+                        </div>
                 </div>
             </div>
         </div>
@@ -293,6 +292,6 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

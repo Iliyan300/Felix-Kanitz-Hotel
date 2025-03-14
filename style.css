@@ -24,6 +24,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            
         }
         
         /* Header Styles */
@@ -36,6 +37,12 @@
             top: 0;
             z-index: 100;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+
+            cursor: pointer;
+            border: none;
         }
         
         .navbar {
@@ -748,6 +755,10 @@
 
         /*  MODAL  */
 
+        .details-modal.modal-hidden {
+            display: none;
+        }
+        
        
         .details-modal {
             position: fixed;
@@ -756,7 +767,7 @@
             top: 15%;
             max-width: 90vw;
             max-height: 80vh;
-            z-index: 1;
+            z-index: 1000;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -765,9 +776,11 @@
             box-shadow: 0 0 2rem rgba(0, 0, 0, 0.349);     
             overflow-y: scroll;
             overflow-x: hidden;
-            display: none;
+            pointer-events: auto;
         
         }
+
+
 
         .details-modal p {
             font-size: 1rem;
@@ -822,15 +835,19 @@
         /* MODAL CAROUSEL */
 
         .modal-carousel {
-            width: 100%;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            border-radius: 20px;
+            padding: 0 16px;
+            
+        }
+
+       
+        .img-wrapper {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
-            overflow-x: scroll;
-            scroll-behavior: smooth;
-            border-radius: 10px;
-          padding: 1rem;
             
         }
 
@@ -840,11 +857,11 @@
             height: 300px;
             margin-top:1.5rem;
             margin-left: 1rem;
-            
+            cursor: pointer;
         }
 
 
-
+    
 
         .modal-carousel button i {
             font-size: 2.2rem;
@@ -858,7 +875,7 @@
             position: absolute;
             cursor: pointer;
             background-color: transparent;
-            
+            z-index: 1;
         }
 
         .modal-carousel #prev-btn {
