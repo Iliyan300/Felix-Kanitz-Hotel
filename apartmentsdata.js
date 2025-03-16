@@ -1,29 +1,35 @@
 
 export const apartmentsData = [
 
-    {
+    {   
+        id:1,
         name: "The Studio",
-        images:["studio-1.jpg", "studio-2.jpg", "studio-3.jpg", "studio-4.jpg", "studio-5.jpg", "studio-bath.jpg",],
+        images:["images/thestudio/studio-1.jpg", "images/thestudio/studio-2.jpg", "images/thestudio/studio-3.jpg", "images/thestudio/studio-4.jpg", "images/thestudio/studio-5.jpg", "images/thestudio/studio-bath.jpg",],
     },
     {
+        id:2,
         name: "Kapana",
-        images:["kapana-1.jpg", "kapana-2.jpg"],
+        images:["images/kapana/kapana-1.jpg", "images/kapana/kapana-2.jpg"],
     },
-    {
+    {   
+        id:3,
         name: "The View",
-        images:["theview-1", "theview-2", "theview-3"],
+        images:["images/theview/theview-1", "images/theview/theview-2", "images/theview/theview-3"],
     },
     {
+        id:4,
         name: "Family",
-        images:["family-1.jpg", "family-2.jpg", "family-3.jpg",],
+        images:["images/family/family-1.jpg", "images/family/family-2.jpg", "images/family/family-3.jpg",],
     },
     {
+        id:5,
         name: "On The Top",
-        images:["onthetop-1.jpg", "onthetop-2.jpg", "onthetop-3.jpg", "onthetop-4.jpg", "onthetop-5.jpg", "onthetop-6.jpg"],
+        images:["images/onthetop/onthetop-1.jpg", "images/onthetop/onthetop-2.jpg", "images/onthetop/onthetop-3.jpg", "images/onthetop/onthetop-4.jpg", "images/onthetop/onthetop-5.jpg", "images/onthetop/onthetop-6.jpg"],
     },
-    {
+    {   
+        id:6,
         name: "Panorama",
-        images:["panorama-1.jpg", "panorama-2.jpg", "panorama-3.jpg", "panorama-4.jpg", "panorama-5.jpg", "panorama-6.jpg",],
+        images:["images/panorama/panorama-1.jpg", "images/panorama/panorama-2.jpg", "images/panorama/panorama-3.jpg", "images/panorama/panorama-4.jpg", "images/panorama/panorama-5.jpg", "images/panorama/panorama-6.jpg",],
     },
     
 ]

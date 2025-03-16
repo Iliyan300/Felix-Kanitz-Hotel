@@ -64,7 +64,7 @@
             <h2 class="section-title">Our Apartments</h2>
             <div class="apartment-grid">
                 <!-- Apartment 1 -->
-                <div class="apartment-card" id="studio">
+                <div class="apartment-card" id="studio" data-id="1">
                     <div class="apartment-img">
                         <img src="images/the studio/studio-6.jpg" loading="lazy" alt="Studio Apartment">
                     </div>
@@ -76,18 +76,15 @@
                 </div>
 
                 <!--- MODAL (HIDDEN) --->
-                    <div class="details-modal modal-hidden" id="apartment-modal">
+                    <div class="details-modal modal-hidden">
                     <div class="X">
                     <i class="fa-solid fa-xmark" id="close-btn"></i>
                     </div>
-                    <h3>The Studio</h3>
+                    <h3 id="modal-title"></h3>
                     <div class="modal-content-wrapper">
                     <div class="modal-carousel" id="img-carousel">
                         <button id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                        <div class="img-wrapper">
-                        <img class="modal-image" src="/images/the studio/studio-1.jpg" alt="Apartment images"> 
-                        <img class="modal-image" src="/images/the studio/studio-2.jpg" alt="Apartment images"> 
-                        <img class="modal-image" src="/images/the studio/studio-3.jpg" alt="Apartment images"> 
+                        <div id="img-wrapper">
                         </div>                      
                         <button id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
@@ -126,19 +123,19 @@
                 </div>
                 
                 <!-- Apartment 2 -->
-                <div class="apartment-card" id="kapana">
+                <div class="apartment-card" id="kapana" data-id="2">
                     <div class="apartment-img">
                         <img src="images/kapana/kapana-1.jpg" loading="lazy" alt="Kapana Apartment">
                     </div>
                     <div class="apartment-info">
                         <h3>Kapana</h3>
                         <p>Named after the artistic district nearby, this bohemian-inspired apartment captures the creative spirit of Plovdiv.</p>
-                        <button class="view-details" data-apartment="kapana">View Details</button>
+                        <button class="view-details">View Details</button>
                     </div>
                 </div>
                 
                 <!-- Apartment 3 -->
-                <div class="apartment-card" id="theview">
+                <div class="apartment-card" id="theview" data-id="3">
                     <div class="apartment-img">
                         <img src="images/the view/theview-2.jpg" loading="lazy" alt="The View Apartment">
                     </div>
@@ -150,7 +147,7 @@
                 </div>
                 
                 <!-- Apartment 4 -->
-                <div class="apartment-card" id="thefamily">
+                <div class="apartment-card" id="thefamily" data-id="4">
                     <div class="apartment-img">
                         <img src="images/family/family-1.jpg" loading="lazy" alt="Family Apartment">
                     </div>
@@ -162,7 +159,7 @@
                 </div>
                 
                 <!-- Apartment 5 -->
-                <div class="apartment-card" id="onthetop">
+                <div class="apartment-card" id="onthetop" data-id="5">
                     <div class="apartment-img">
                         <img src="images/on the top/onthetop-4.jpg" loading="lazy" alt="On The Top Apartment">
                     </div>
@@ -174,7 +171,7 @@
                 </div>
                 
                 <!-- Apartment 6 -->
-                <div class="apartment-card" id="panorama">
+                <div class="apartment-card" id="panorama" data-id="6">
                     <div class="apartment-img">
                         <img src="/images/panorama/panorama-4.jpg" loading="lazy" alt="Panorama Apartment">
                     </div>

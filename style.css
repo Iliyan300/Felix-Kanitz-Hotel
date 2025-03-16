@@ -828,10 +828,6 @@
 
 
 
-
-
-
-
         /* MODAL CAROUSEL */
 
         .modal-carousel {
@@ -843,7 +839,7 @@
         }
 
        
-        .img-wrapper {
+        #img-wrapper {
             display: flex;
             flex-direction: row;
             align-items: center;
