@@ -783,7 +783,8 @@
 
 
         .details-modal p {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            font-weight: 800;
         }
 
         .details-modal h3 {
@@ -795,35 +796,17 @@
 
         .details-modal ul {
             list-style: none;
-            font-size: 1rem;
-            
-        }
-        
+            font-size: 1.1rem;
+            font-weight: 600;
 
-        .modal-room-info {
-            padding: 1rem;
-            margin-top: auto;
-            margin-bottom: auto;
-            max-width: 40vw;
         }
 
-        .modal-room-amenities {
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 10px;
-        }
-
-        .modal-room-amenities li {
-
-            margin: 8px 0;
-        }
 
         .modal-room-amenities li i {
 
             margin-right: 8px;
             font-size: 1.1rem;
+            
         }
 
 
@@ -876,23 +859,18 @@
 
         .modal-carousel #prev-btn {
             top: 50%;
-            right: 95%;
+            right: 93%;
             transform: translate(50%, 50%);
            width: 50px;
         }
 
         .modal-carousel #next-btn {
             top: 50%;
-            right: 40%;
+            right: 5%;
             transform: translate(50%, 50%);
             width: 50px;
            
         }
-
-
-
-
-
 
 
         .details-modal .X {
@@ -933,18 +911,27 @@
         .modal-room-other {
 
             width: 100%;
-            margin: 1rem 1rem;
-            padding: 1rem;
-
+           
+            place-content: center;
+            margin: 1rem;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            column-gap: 1.5rem;
         }
 
 
         .modal-room-other ul {
 
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
             gap: 1rem;
-            
+            padding: 1rem;
+        }
+
+        .modal-room ul li {
+         flex: 1;
         }
 
 
@@ -956,8 +943,6 @@
           align-items: flex-start;
           text-align: flex-start;
           padding: 1rem;
-
-          
         }
 
 
@@ -981,15 +966,19 @@
            margin: 1rem auto;
            width: 100%;
            padding: 1rem;
-           
+          
         }
 
-        .details-modal button {
+        
 
-            font-size: 1.1rem;
+        .details-modal .reserve button {
+
+            font-size: 1.2rem;
+            font-weight: 800;
             width: 100%;
             border: none;
             cursor: pointer;
+         
         }
 
         

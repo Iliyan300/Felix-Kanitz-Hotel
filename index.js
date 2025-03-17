@@ -9,7 +9,9 @@ const prevBtn = document.getElementById("prev-btn");
 const closeBtn = document.getElementById("close-btn");
 const imageWrapper = document.getElementById("img-wrapper");
 const modalTitle = document.getElementById("modal-title");
-
+const modalRoomAmenities = document.getElementById("modal-amenities");
+const amenitiesList = modalRoomAmenities.querySelectorAll("span");
+const roomDescription = document.getElementById("rm-description");
 
     document.querySelectorAll(".view-details").forEach((btn) => {
         btn.addEventListener("click", function() {
@@ -18,11 +20,11 @@ const modalTitle = document.getElementById("modal-title");
             
             if(apartment) {
 
-                modalTitle.textContent = apartment.name
                 imageWrapper.innerHTML = ""
+                modalTitle.textContent = apartment.name;
+                roomDescription.textContent = apartment.description;
                 let imageWidth;
                
-
                 apartment.images.forEach((imgsrc) => {
                     const imgElement = document.createElement("img");
                     imgElement.classList.add("modal-image");
@@ -30,9 +32,11 @@ const modalTitle = document.getElementById("modal-title");
                     imageWrapper.appendChild(imgElement);
                 })
                 
+                
+              
+                /* IMAGE CAROUSEL LOGIC */
                 document.querySelector(".modal-image").addEventListener("load", function() {
                     imageWidth = getScrollAmount(this);
-                    
                 })
 
             
@@ -40,7 +44,7 @@ const modalTitle = document.getElementById("modal-title");
                     modalCarousel.scrollLeft += imageWidth;
                 })
                 
-                
+
                 prevBtn.addEventListener("click", function() {
                     modalCarousel.scrollLeft -= imageWidth;
                 
@@ -48,21 +52,13 @@ const modalTitle = document.getElementById("modal-title");
                     
             }
 
-        document.body.style.overflow = "hidden";
-        document.body.style.pointerEvents = "none";
-        modalOpen();
+            modalOpen();
     
         })
     })
 
 
-
-
-
-
-/* --- FUNCTIONALITY FOR MODAL - OPEN,CLOSE,MOVE IMAGES --- */
-
-
+    
 
 
 /* GETTING IMAGES WIDTH AND GAP */
@@ -73,27 +69,16 @@ function getScrollAmount(image) {
     return scrollAmount;
 }
 
-
-
-/* MOVE IMAGES LEFT AND RIGHT*/
-
-
-
-
 /* CLOSE MODAL WITH CLICK AND ESC */
 closeBtn.addEventListener("click", function() {
-    document.body.style.overflow = "auto";
-    document.body.style.pointerEvents = "auto";
     modalClose()
 })
 
 
-
+/* CLOSE MODAL WHEN CLICK OUTSIDE */
 document.addEventListener("click", function(event) {
     if(detailsModal.classList.contains("modal-hidden")) return;
     if(!detailsModal.contains(event.target) && !event.target.classList.contains("view-details")) {
-        document.body.style.overflow = "auto";
-        document.body.style.pointerEvents = "auto";
         modalClose();
     }
 })
@@ -102,17 +87,19 @@ document.addEventListener("click", function(event) {
 document.addEventListener("keydown",function(event) {
 
     if(event.key === "Escape") {
-        document.body.style.overflow = "auto";
-        document.body.style.pointerEvents = "auto";
         modalClose();
     }
 })
 
 function modalClose() {
     detailsModal.classList.add("modal-hidden");
+    document.body.style.overflow = "auto";
+    document.body.style.pointerEvents = "auto";
 }
 
 function modalOpen() {
+    document.body.style.overflow = "hidden";
+    document.body.style.pointerEvents = "none";
     detailsModal.classList.remove("modal-hidden");
 }
 
