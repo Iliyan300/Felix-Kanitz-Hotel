@@ -1,5 +1,5 @@
 import { apartmentsData } from "./apartmentsdata.js";
-
+import { toggleMenu } from "./menu.js";
 
 document.addEventListener("DOMContentLoaded", function() {
 const detailsModal = document.querySelector(".details-modal");
@@ -33,7 +33,6 @@ const facilitiesList = document.getElementById("modal-facilities")
                     const liElement = document.createElement("li");
                     const iconElement = document.createElement("i");
                     
-
                     switch(facility) {
                         case "1 extra-large double bed":
                         iconElement.className = "fa-solid fa-bed";
@@ -58,7 +57,6 @@ const facilitiesList = document.getElementById("modal-facilities")
                     liElement.append(iconElement, spanElement);
                     facilitiesList.appendChild(liElement);
 
-            
                 })
                 
                 apartment.general.forEach((amenity) => {
@@ -208,14 +206,7 @@ const changeBg = createBackgroundChanger("golfbar", [
 )
 
 /* MENU OPEN + ANIMATION */
-document.getElementById("menu-icon").addEventListener("click", function() {
-    
-    const navbar = document.getElementById("nav-bar");
-    const menuAnimate = document.querySelector(".fa-bars");
-    menuAnimate.classList.toggle("rotate-menu")
-    navbar.classList.toggle("show-menu");
-    
-});
+document.getElementById("menu-icon").addEventListener("click", toggleMenu);
 
 changeBg()
 setInterval(changeBg, 5000);

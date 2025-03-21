@@ -344,6 +344,91 @@
             font-size: 1.4rem;
         }
 
+      @media (min-width: 750px) {
+
+        .golf-hero-about .section-title {
+
+           font-size: 3rem;
+           margin-top: 1rem;
+           font-weight: 800;
+        }
+
+        .golf-section-info i {
+
+            color: #bf8e5a;
+            margin-right: 1rem;
+        }
+
+        .golf-hero-content.simulator {
+
+            background: url("/images/golf\ bar/golf-hand.jpg");
+            background-blend-mode: darken;
+            background-color: #000000af;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .golf-hero-content.bar {
+            grid-template-columns: 1fr 1fr;
+            place-content: center;  
+            background-color: #000000e0;
+            padding: 1rem;
+        }
+
+        .golf-section-info.bar {
+            background: linear-gradient(to bottom, rgb(0, 0, 0), #000000e0 );
+            padding: 1rem 0;
+        }
+        .golf-section-info p {
+            text-align: center;
+            padding: 1rem 0;
+          }
+        
+       
+        .golf-hero-content {
+            gap: 1rem;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+    
+          .golf-hero-content img {
+            max-width: 100%;
+            max-height: 80vh;
+          }
+    
+          .golf-section-images {
+            margin-top: 1rem;
+            
+          }
+
+          .golf-section-info {
+            border-left: 2px solid #bf8e5a;
+            padding-left: 1.5rem;
+            font-size: 2rem;
+            color: white;
+            font-weight: 800;
+        
+          }
+
+        
+          .golf-section-info ul {
+            list-style-type: none;
+            margin-top: 1.5rem;
+          }
+
+          .golf-section-info ul li {
+            font-size: 1.4rem;
+            margin: 1rem;
+          }
+
+          .golf-section-info ul li i {
+            color: #bf8e5a;
+            margin-right: 5px;
+          }
+        }
+
+
        
         .golf-bar .container {
             
@@ -385,8 +470,6 @@
             align-items: flex-start;
             flex-direction: column;
             font-weight: 500;
-            
-
         }
 
         .golf-bar-services li {
@@ -750,7 +833,27 @@
                 
             }
 
+            /* Golf-bar page Mobile */
 
+            .golf-hero-content {
+                font-size: 2rem;
+                color: #333;
+                font-weight: 800;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                gap: 1rem;
+                padding: 1rem;
+              }
+        
+              .golf-hero-content img {
+               width: 100%;
+              
+              }
+        
+              .golf-section-images {
+                
+                
+              }
            
         }
     

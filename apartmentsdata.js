@@ -64,6 +64,7 @@ export const apartmentsData = [
         description: "The unit offers 2 beds - 1 extra-large double bed and 1 sofa bed",
         smoking: "No Smoking",
     },
+
     
 ]
 
